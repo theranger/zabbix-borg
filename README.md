@@ -1,7 +1,7 @@
 Zabbix template for monitoring Borg backup repositories. Requires Borg binary to be available in the system being monitored. Monitoring occurs on the backup server, though it can be possible to invoke this by the client and connect to repository via Borg network capabilities. This setup is currently not supported by the plugin.
 
 # Installation
-1. Copy `zabbix_agentd.d/borg.conf` to the Zabbix agent's configuration directory (usually located at `/etc/zabbix`).
+1. Copy `zabbix_agentd.d/borg.conf` to the Zabbix agent's configuration directory (usually located at `/etc/zabbix`). If using encrypted repositories, read the note below and use the file `zabbix_agentd.d/borg-enc.conf`.
 2. Import template configuration `templates/borg.xml` to Zabbix web frontend.
 
 # Notes
