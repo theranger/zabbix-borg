@@ -15,4 +15,5 @@ For encrypted repositories, a `borg info` command must be run right after the ba
 To save the output of aforementioned commands, use something like:
 ```
 	borg info user@host:repo::backup | ssh user@host 'cat > repo/status.txt'
+	borg check user@host:repo | ssh user@host 'cat >> repo/status.txt'
 ```
